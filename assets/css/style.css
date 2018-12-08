@@ -35,10 +35,17 @@ header {
     background-color: #ffffff;
     color: grey;
     text-align: center;
-    padding: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
     text-decoration: none;
     font-weight: bold;
     font-family: "Georgia", 'Times New Roman', Times, serif;
+}
+
+.portfolio {
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
 }
 
 /* Color of links on hover */
@@ -85,13 +92,14 @@ header {
     text-align: justify;
 }
 
-.footer {
-    clear: both;
-    overflow: auto;
-    flex-shrink: 0;
+footer {
     border-top: 4px solid #0074D9;
     background-color: darkgray;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
 }
 
 /* Form style inputs */
@@ -126,18 +134,43 @@ input[type=text], select {
     background-color: darkgrey;
     color: black;
   }
-
-  .hangman {
+ 
+  .pics {
+      position: relative;
       float: left;
+      width: 200px;
+      height: 200px;
+      margin: 50px;
+      border: 1px solid darkblue;
   }
 
-  .hangman img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-  }
-  
-  .hangman p {
-      text-align: center;
+  .pics p {
+      position: absolute;
+      font-size: 20px;
+      bottom: 5px;
       background-color: #0074D9;
+      width: 100%;
+      text-align: center;
+      color: white;
   }
+
+  #hangman {
+      background-image: url(/assets/images/hangman.jpg);
+  }
+
+  #rpg {
+    background-image: url(/assets/images/rpg.jpg);
+  }
+
+  #trivia {
+      background-image: url(/assets/images/trivia.jpg)
+  }
+
+  #rutgers {
+      background-image: url(/assets/images/widget.jpg)
+  }
+
+  #rock {
+      background-image: url(/assets/images/rock.jpg)
+  }
+    
