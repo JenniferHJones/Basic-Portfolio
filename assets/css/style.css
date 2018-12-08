@@ -58,7 +58,8 @@ header {
     border-top: 1px solid #0074D9;
     background-image: url("/assets/images/regal.png");
     background-repeat: repeat;
-
+    width: 100%;
+    height: 100vh;
 }
 
 /* Body */
@@ -88,7 +89,55 @@ header {
     clear: both;
     overflow: auto;
     flex-shrink: 0;
-    border-top: 8px solid #0074D9;
+    border-top: 4px solid #0074D9;
     background-color: darkgray;
     text-align: center;
 }
+
+/* Form style inputs */
+input[type=text], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid darkblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  #message {
+    padding-bottom: 200px;
+  }
+
+  /* Form style the submit button */
+  input[type=submit] {
+    background-color: #0074D9;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 2px solid darkblue;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Form style for submit button hover */
+  input[type=submit]:hover {
+    background-color: darkgrey;
+    color: black;
+  }
+
+  .hangman {
+      float: left;
+  }
+
+  .hangman img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+  
+  .hangman p {
+      text-align: center;
+      background-color: #0074D9;
+  }
